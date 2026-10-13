@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Day Details | Campus Events Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Campus Events Guide</h1>
+        <p>Find events and activities on campus</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="event-details.html">Event Details</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+        <input type="checkbox" id="dark-mode">
+        <label class="dark-mode-label" for="dark-mode">Dark Mode</label>
+    </header>
+    <main>
+        <section>
+            <h2>Technology Day</h2>
+            <img class="featured-poster" src="assets/technology.svg" alt="Technology Day event poster">
+            <p><strong>Date:</strong> 20 October 2026</p>
+            <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+            <p><strong>Venue:</strong> Main Hall</p>
+            <p>Technology Day is a campus event where students can discover new ideas, share projects, and learn about technology. Students can meet other people who are interested in computers and innovation.</p>
+        </section>
+
+        <section>
+            <h2>Event Agenda</h2>
+            <ul>
+                <li>10:00 AM - Welcome and opening.</li>
+                <li>10:30 AM - Student project presentations.</li>
+                <li>12:00 PM - Technology activity.</li>
+                <li>1:00 PM - Questions and networking.</li>
+                <li>2:00 PM - Event ends.</li>
+            </ul>
+            <h2>Entry Information</h2>
+            <p>Entry is free for university students. Please register before attending and bring your student ID.</p>
+            <p><a class="button" href="registration.html">Register for Technology Day</a></p>
+        </section>
+
+        <section>
+            <h2>Event Audio</h2>
+            <p>Listen to a short sample audio clip for this event page.</p>
+            <audio controls>
+                <source src="assets/campus-audio.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Leave an Event Review</h2>
+            <form action="#" method="get">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="review-name">Your name</label>
+                        <input type="text" id="review-name" name="review-name" required maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="review-email">Email address</label>
+                        <input type="email" id="review-email" name="review-email" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="review-text">Your review</label>
+                        <textarea id="review-text" name="review-text" rows="4" required maxlength="500"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="review-file">Upload a photo or file (optional)</label>
+                        <input type="file" id="review-file" name="review-file" accept="image/*,.pdf">
+                    </div>
+                </div>
+                <p><button type="submit">Submit Review</button></p>
+                <p>This demo form does not save or send your review.</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Follow Campus Events Guide</p>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+        <p>Campus Events Guide &copy; 2026</p>
+    </footer>
+</body>
+</html>

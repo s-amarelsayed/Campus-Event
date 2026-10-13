@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | Campus Events Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Campus Events Guide</h1>
+        <p>Find events and activities on campus</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="event-details.html">Event Details</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+        <input type="checkbox" id="dark-mode">
+        <label class="dark-mode-label" for="dark-mode">Dark Mode</label>
+    </header>
+    <main>
+        <section>
+            <h2>Register for Technology Day</h2>
+            <p><strong>Event date:</strong> 20 October 2026</p>
+            <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+            <p><strong>Venue:</strong> Main Hall</p>
+            <p>Complete the form below to show your registration details.</p>
+        </section>
+
+        <section>
+            <form action="#" method="get">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="attendee-name">Attendee name</label>
+                        <input type="text" id="attendee-name" name="attendee-name" required maxlength="60" pattern="[A-Za-z ]+">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="website">Website or portfolio URL</label>
+                        <input type="url" id="website" name="website" placeholder="https://example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="tickets">Number of attendees</label>
+                        <input type="number" id="tickets" name="tickets" min="1" max="5" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comfort">Comfort level (1 to 10)</label>
+                        <input type="range" id="comfort" name="comfort" min="1" max="10" value="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Event date</label>
+                        <input type="date" id="event-date" name="event-date" value="2026-10-20" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="badge-color">Badge color</label>
+                        <input type="color" id="badge-color" name="badge-color" value="#2878b5">
+                    </div>
+                    <div class="form-group">
+                        <label for="arrival-time">Expected arrival time</label>
+                        <input type="time" id="arrival-time" name="arrival-time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="student-card">Student ID or supporting file</label>
+                        <input type="file" id="student-card" name="student-card" accept="image/*,.pdf">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-choice">Choose an event</label>
+                        <select id="event-choice" name="event-choice" required>
+                            <option value="">Select an event</option>
+                            <option value="technology" selected>Technology Day</option>
+                            <option value="sports">Sports Day</option>
+                            <option value="music">Music Day</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="notes">Additional notes or access needs</label>
+                        <textarea id="notes" name="notes" rows="4" maxlength="300" placeholder="Write any notes here"></textarea>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend>Attendance type</legend>
+                    <label><input type="radio" name="attendance" value="in-person" required> In person</label>
+                    <label><input type="radio" name="attendance" value="online"> Online information only</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Other information</legend>
+                    <label><input type="checkbox" name="updates" value="yes"> Send me information about future events</label>
+                    <br>
+                    <label><input type="checkbox" name="agreement" value="yes" required> I confirm that my details are correct</label>
+                </fieldset>
+
+                <button type="submit">Submit Registration</button>
+                <button type="reset">Clear Form</button>
+                <p>This is a sample form. It does not save or send your information.</p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Event Contact</h2>
+            <p>Email: events@example.com</p>
+            <p>Office: Student Activities Office, Main Campus</p>
+        </section>
+    </main>
+    <footer>
+        <p>Follow Campus Events Guide</p>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+        <p>Campus Events Guide &copy; 2026</p>
+    </footer>
+</body>
+</html>
